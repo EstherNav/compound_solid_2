@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.006510031647193887 -0.9999783416124327 0.0009673644614515386 1.3594373419990928
-  position -2.968823023348084 -2.7018140048820378e-05 0.9223677976012793
+  orientation 0.7767780374023187 0.5977253045409241 0.19834399643261627 5.475738034507592
+  position -2.5563435526671605 4.61004647035441 4.32268929849772
 }
 TexturedBackground {
 }
@@ -12,6 +12,7 @@ TexturedBackgroundLight {
 Floor {
 }
 Solid {
+  translation 0 0.26 0
   children [
     Group {
       children [
@@ -48,6 +49,158 @@ Solid {
                 radius 0.08
               }
             }
+          ]
+        }
+        DEF S_CYL2 Transform {
+          translation 0.36 0 0
+          children [
+            USE S_CYL1
+          ]
+        }
+        DEF S_SPH3 Transform {
+          translation 0.36 0.18 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.45098039215686275 0.8235294117647058 0.08627450980392157
+              }
+              geometry Sphere {
+                radius 0.08
+              }
+            }
+          ]
+        }
+        DEF S_SPH4 Transform {
+          translation 0.36 -0.18 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.3058823529411765 0.6039215686274509 0.023529411764705882
+              }
+              geometry Sphere {
+                radius 0.08
+              }
+            }
+          ]
+        }
+        DEF S_CYL3 Transform {
+          translation 0.18 0.18 0
+          rotation 0 0 1 1.5708
+          children [
+            USE S_CYL1
+          ]
+        }
+        DEF S_CYL4 Transform {
+          translation 0.18 -0.18 0
+          rotation 0 0 1 1.5708
+          children [
+            USE S_CYL1
+          ]
+        }
+        Transform {
+          translation 0 0 0.36
+          children [
+            USE S_CYL1
+          ]
+        }
+        DEF S_SPH5 Transform {
+          translation 0 0.18 0.36
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.45098039215686275 0.8235294117647058 0.08627450980392157
+              }
+              geometry Sphere {
+                radius 0.08
+              }
+            }
+          ]
+        }
+        DEF S_SPH6 Transform {
+          translation 0 -0.18 0.36
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.3058823529411765 0.6039215686274509 0.023529411764705882
+              }
+              geometry Sphere {
+                radius 0.08
+              }
+            }
+          ]
+        }
+        Transform {
+          translation 0.36 0 0.36
+          children [
+            USE S_CYL1
+          ]
+        }
+        DEF S_SPH7 Transform {
+          translation 0.36 0.18 0.36
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.45098039215686275 0.8235294117647058 0.08627450980392157
+              }
+              geometry Sphere {
+                radius 0.08
+              }
+            }
+          ]
+        }
+        DEF S_SPH8 Transform {
+          translation 0.36 -0.18 0.36
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.3058823529411765 0.6039215686274509 0.023529411764705882
+              }
+              geometry Sphere {
+                radius 0.08
+              }
+            }
+          ]
+        }
+        DEF S_CYL7 Transform {
+          translation 0.18 0.18 0.36
+          rotation 0 0 1 1.5708
+          children [
+            USE S_CYL1
+          ]
+        }
+        DEF S_CYL8 Transform {
+          translation 0.18 -0.18 0.36
+          rotation 0 0 1 1.5708
+          children [
+            USE S_CYL1
+          ]
+        }
+        DEF S_CYL9 Transform {
+          translation 0.36 0.18 0.2
+          rotation 1 0 0 1.5708
+          children [
+            USE S_CYL1
+          ]
+        }
+        DEF S_CYL10 Transform {
+          translation 0 0.18 0.2
+          rotation 1 0 0 1.5708
+          children [
+            USE S_CYL1
+          ]
+        }
+        DEF S_CYL11 Transform {
+          translation 0.36 -0.18 0.2
+          rotation 1 0 0 1.5708
+          children [
+            USE S_CYL1
+          ]
+        }
+        DEF S_CYL12 Transform {
+          translation 0 -0.18 0.2
+          rotation 1 0 0 1.5708
+          children [
+            USE S_CYL1
           ]
         }
       ]
